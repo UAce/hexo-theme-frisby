@@ -1,0 +1,87 @@
+body {
+  font-family: "Droid Sans", arial, sans-serif;
+  background-color: #eeeeee;
+  padding-top: 40px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: black; }
+
+h1, h2 {
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 10px; }
+
+h3, h4 {
+  font-family: "Chivo", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.container {
+  margin-bottom: 50px; }
+
+/* The white background content wrapper */
+#page_content {
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: 0 -20px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+
+#page_main p {
+  font-size: 16px;
+  line-height: 1.5em; }
+
+/* Page header tweaks */
+#page_head {
+  background-color: #e2550e;
+  border-bottom: 3px solid #e49b26;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px; }
+  #page_head h1 {
+    color: white;
+    margin: 0;
+    font-size: 34px; }
+  #page_head .header_nav {
+    float: right;
+    margin: -10px 6px 0 0;
+    list-style: none; }
+    #page_head .header_nav li {
+      list-style: none;
+      float: left; }
+    #page_head .header_nav a {
+      color: white;
+      display: block;
+      margin-right: 5px;
+      padding: 7px 20px;
+      border: 1px solid white;
+      border-radius: 6px; }
+    #page_head .header_nav li.page_active a {
+      background: white;
+      color: #222222; }
+
+#page_main h1, #page_main h2, #page_main h3, #page_main h4, #page_main h5, #page_main h6 {
+  color: black;
+  margin-top: 20px; }
+
+/* page footer */
+#page_foot {
+  background-color: #dddddd;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #39414d;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
