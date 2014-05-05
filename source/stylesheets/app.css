@@ -1,34 +1,47 @@
+/**
+ * Site Styles
+ */
+@import url(bootstrap.css);
+/* custom font */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Cabin:400,700|Chivo);
+/* Override some defaults */
+html, body {
+  font-family: 'Droid Sans', arial, sans-serif;
+  background-color: #eee; }
+
 body {
-  font-family: "Droid Sans", arial, sans-serif;
-  background-color: #eeeeee;
-  padding-top: 40px; }
+  padding-top: 60px;
+  /* 40px to make the container go all the way to the bottom of the topbar */ }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black; }
+  color: #000; }
 
 h1, h2 {
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 h2 {
   font-size: 26px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-bottom: 4px solid #ddd; }
 
-h3, h4 {
-  font-family: "Chivo", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin: 0 !important;
-  padding: 0 !important; }
+h3 {
+  border-bottom: 2px solid #ddd; }
+
+h3, h4, h5, h6 {
+  font-family: 'Chivo', Helvetica, Arial, sans-serif;
+  font-weight: bold; }
 
 .container {
   margin-bottom: 50px; }
 
 /* The white background content wrapper */
 #page_content {
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
   padding-bottom: 40px;
   margin: 0 -20px;
+  /* negative indent the amount of the padding to maintain the grid system */
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
@@ -43,40 +56,28 @@ h3, h4 {
 /* Page header tweaks */
 #page_head {
   background-color: #e2550e;
-  border-bottom: 3px solid #e49b26;
+  border-bottom: 3px solid #E49B26;
   padding: 20px 20px 10px;
-  margin: -20px -20px 20px; }
-  #page_head h1 {
-    color: white;
-    margin: 0;
-    font-size: 34px; }
-  #page_head .header_nav {
-    float: right;
-    margin: -10px 6px 0 0;
-    list-style: none; }
-    #page_head .header_nav li {
-      list-style: none;
-      float: left; }
-    #page_head .header_nav a {
-      color: white;
-      display: block;
-      margin-right: 5px;
-      padding: 7px 20px;
-      border: 1px solid white;
-      border-radius: 6px; }
-    #page_head .header_nav li.page_active a {
-      background: white;
-      color: #222222; }
+  margin: -20px -20px 0; }
+
+#page_head h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 34px; }
+
+#topnav {
+  margin: 0 -6px;
+  border-radius: 0; }
 
 #page_main h1, #page_main h2, #page_main h3, #page_main h4, #page_main h5, #page_main h6 {
-  color: black;
+  color: #000;
   margin-top: 20px; }
 
 /* page footer */
 #page_foot {
-  background-color: #dddddd;
-  border-top: 1px solid #bbbbbb;
-  border-bottom: 1px solid #39414d;
+  background-color: #ddd;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #39414D;
   padding: 20px 20px 10px;
   margin: -20px -20px 20px; }
 
@@ -85,3 +86,120 @@ h3, h4 {
 
 .right {
   text-align: right; }
+
+/* Syntax highlighting stolen from hexo.js webiste */
+pre,
+code {
+  font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
+  color: #4d4d4c;
+  background: #eee;
+  font-size: 13px; }
+
+code {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 0 5px; }
+
+pre {
+  padding: 10px 15px;
+  line-height: 22px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ddd; }
+
+pre code {
+  border: none;
+  display: block;
+  padding: 0; }
+
+.highlight {
+  background: #eee;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #4d4d4c;
+  overflow: auto;
+  margin: 0; }
+
+.highlight figcaption {
+  zoom: 1;
+  margin: -5px 0 5px;
+  font-size: 0.9em;
+  color: #999; }
+
+.highlight figcaption:before,
+.highlight figcaption:after {
+  content: "";
+  display: table; }
+
+.highlight figcaption:after {
+  clear: both; }
+
+.highlight figcaption a {
+  float: right; }
+
+.highlight pre {
+  padding: 0;
+  border: none;
+  background: none; }
+
+pre .comment,
+pre .title {
+  color: #8e908c; }
+
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #c82829; }
+
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f5871f; }
+
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #718c00; }
+
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #718c00; }
+
+pre .css .hexcolor {
+  color: #3e999f; }
+
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #4271ae; }
+
+pre .keyword,
+pre .javascript .function {
+  color: #8959a8; }
+
+.highlight .gutter {
+  display: none; }
